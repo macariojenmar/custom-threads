@@ -11,9 +11,9 @@ node_modules
 dist
 dist-ssr
 *.local
-firbase.js
-firbase.json
-.firbase
+firebase.js
+firebase.json
+.firebase
 
 # Editor directories and files
 .vscode/*
