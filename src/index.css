@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: 'Poppins', 'serif';
+  font-size: 14px;
+}
+
+body {
+  background: theme('colors.primary-bg');
+}
+
+p {
+  line-height: 25px;
+}
+
+button {
+  padding: 8px 30px;
+  background-color: theme('colors.accent-rose');
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 700;
+}
+
+button:hover {
+  transition: 0.5s;
+  box-shadow: theme('boxShadow.custom-light');
+  background-color: theme('colors.primary-bg');
+
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: theme('colors.accent-pink');
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.icon-btn {
+  @apply p-2 rounded-full cursor-pointer hover:bg-paper-bg duration-500;
+}
+
+.backdrop {
+  @apply fixed inset-0 bg-black bg-opacity-75 transition-opacity duration-500 ease-in-out data-[closed]:opacity-0;
+}
+
+@layer components {
+  .oleo-font {
+    font-family: "Oleo Script", system-ui;
+  }
+
+  .topbar {
+    color: #fff;
+  }
+
+  .link {
+    cursor: 'pointer';
+  }
+
+  .link:hover {
+    color: theme('colors.accent-pink');
+    transition: 0.5s;
+  }
+
+  .homepage-banner {
+    background-color: theme('colors.highlight-yellow');
+  }
+
+  .card {
+    background-color: theme('colors.paper-bg');
+    padding: 30px;
+    border-radius: 20px;
+  }
+
+  .customize-section {
+    background-color: theme('colors.accent-rose');
+  }
+
+}
